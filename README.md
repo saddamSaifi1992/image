@@ -1,8 +1,8 @@
-#Image 
+**#Image**
 
 
 
-
+```
 $path = "./images/pexels-photo-1209843.jpeg";
 
 
@@ -23,10 +23,10 @@ $image->filter->colorize(130);
 
 $image->png()->print();
 die();
-
+```
 
 #builder
-
+```
 $builder = new Builder(new  ImageGenerator);
 $builder->img->width = 200;
 $builder->img->height = 100;
@@ -37,13 +37,13 @@ $builder->img->size_width = 250;
 $builder->img->size_height = 250;
 echo $builder->captacha();
 die();
-
+```
 
 
 
 
 #screen shot
-
+```
 $image->width = 200;
 $image->height = 100;
  
@@ -51,9 +51,9 @@ $image->height = 100;
 $image->screenShot();
 echo $image->filterInicilization()->png()->print();
 die();
+```
 
-
-
+```
 $image->tranparent()
      ->setHex("#ffffff")
      ->setBgColor('#27ae60')
@@ -66,11 +66,11 @@ $image->tranparent()
      ->line(null, 10, 10, 200, 100)
      ->string();
      ->png();
-
+```
  
 
  
-
+```
  $values = array(
     00,  00,  // Point 1 (x, y)
      100,  200, // Point 2 (x, y)
@@ -94,10 +94,14 @@ $image->tranparent()
      ->polygon($values, '#2c3e50', 6)
      ->polygon($values2, '#f1c40f', 6)
      ->png();
+```
 
+```
  echo $image->setHex("#2980b9")->tranparent()->ellipse(200, 200, 300, 300);
+```
 
- echo $image->setHex("#e74c3c")->tranparent()
+```
+echo $image->setHex("#e74c3c")->tranparent()
      ->rectangle(10, 10, 390, 390)
      ->rectangle(20, 20, 380, 380, '#8e44ad')
      ->rectangle(30, 30, 370, 370, '#2c3e50')
@@ -108,3 +112,4 @@ $image->tranparent()
      ->ellipse(200, 200, 280, 280, '#27ae60')
      ->ellipse(200, 200, 270, 270, '#f1c40f')
      ->png();
+```
