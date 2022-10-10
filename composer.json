@@ -1,0 +1,21 @@
+{
+    "name": "saddam/image",
+    "description": "Generate placeholder images with a specific size, color and text (optional).",
+    "type": "project",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Saddam\\Image\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "saddam hussain"
+        }
+    ],
+    "require": {
+        "php": ">=8.0",
+        "ext-gd": ">=8.0",
+        "psr/container": "^1.0"
+    }
+}
